@@ -1,35 +1,32 @@
-Sistema Bancário em Java
+# Sistema Bancário em Java
 
-Este projeto é um sistema bancário simples desenvolvido em Java que permite gerenciar clientes e contas bancárias. Ele implementa funcionalidades básicas, como cadastro de clientes e contas, depósitos, saques com limite especial, consulta de saldo e listagem de clientes.
+Este é um sistema bancário simples desenvolvido em Java, com foco em programação orientada a objetos. O sistema permite gerenciar clientes e suas contas, realizar operações financeiras básicas, e exibir informações importantes via um menu interativo no console.
 
-Funcionalidades
+---
 
-Cadastro de clientes e criação de contas (Conta Corrente e Conta Poupança)
+## Funcionalidades
 
-Depósito em conta
+- **Cadastro de clientes**: Permite registrar clientes informando CPF, nome e data de nascimento.
+- **Criação de contas**: O sistema suporta dois tipos de conta: Conta Corrente e Conta Poupança.
+- **Depósitos**: Permite depositar valores positivos nas contas.
+- **Saques**: Permite sacar valores, considerando saldo disponível. Caso o saldo seja zero, há um limite especial de até R$450,00 que pode ser utilizado mediante confirmação.
+- **Consulta de saldo**: Consulta o saldo disponível na conta.
+- **Listagem de clientes**: Exibe todos os clientes cadastrados no sistema.
 
-Saque com controle de saldo e uso de limite especial (até R$450,00)
+---
 
-Consulta de saldo
+## Estrutura do projeto
 
-Listagem de clientes cadastrados
+- **Main.java**: Classe principal, contém o menu interativo para o usuário realizar operações.
+- **Banco.java**: Gerencia a coleção de contas e operações relacionadas a busca e listagem.
+- **Conta.java** (abstrata): Classe base para as contas bancárias, com métodos comuns como depositar, sacar e consultar saldo.
+- **ContaCorrente.java** e **ContaPoupanca.java**: Extendem a classe Conta e representam os tipos específicos de conta.
+- **Cliente.java**: Representa os dados pessoais do cliente (CPF, nome, data de nascimento).
 
-Estrutura do projeto
+---
 
-Main: classe principal com o menu interativo via console
+## Como executar
 
-Banco: gerencia as contas e clientes
-
-Conta (abstrata): classe base para contas bancárias
-
-ContaCorrente e ContaPoupanca: tipos específicos de conta
-
-Cliente: dados pessoais do cliente
-
-Como usar
-
-Clone o repositório.
-
-Compile e execute a classe Main.
-
-Utilize o menu para interagir com o sistema.
+1. Clone o repositório:
+   ```bash
+   git clone <URL-do-repositório>
