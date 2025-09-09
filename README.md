@@ -24,9 +24,3 @@ Este é um sistema bancário simples desenvolvido em Java, com foco em programa�
 - **Cliente.java**: Representa os dados pessoais do cliente (CPF, nome, data de nascimento).
 
 ---
-
-## Como executar
-
-1. Clone o repositório:
-   ```bash
-   git clone <URL-do-repositório>
